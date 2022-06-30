@@ -1,0 +1,9 @@
+@function get_justify($direction,$justify) {
+  @if($direction == "column-reverse" or $direction == "row-reverse") {
+  @return "end";
+  }
+  @else {
+    @return $justify;
+  }
+  
+};

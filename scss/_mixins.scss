@@ -1,3 +1,5 @@
+@import "helpers";
+
 @mixin background($color,$image:"") {
   background-color: $color;
   background-image: $image;
@@ -10,4 +12,12 @@
 @mixin size($width,$height) {
   width: $width;
   height: $height;
+}
+
+
+@mixin display_flex($direction,$justifyContent:start) {
+  
+  display: flex;
+  flex-direction: $direction;
+  justify-content: get_justify($direction,$justifyContent )
 }
