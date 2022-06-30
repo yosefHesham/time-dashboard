@@ -8,7 +8,7 @@
 
 body {
   background-color: #0f1424;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik','Montserrat' sans-serif;
 }
 
 main {
@@ -75,19 +75,21 @@ main {
   border: 2px solid white;
   border-radius: 50%;
   width: 40%;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .report span {
   color: white;
   font-size: 12px;
+  margin-top: 25px;
   font-weight: 300;
 }
 
 .report p {
   color: white;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .report ul {
@@ -143,7 +145,7 @@ main {
 }
 
 .card-bg.play-bg {
-  background-color: #ff8c66;
+  background-color: #56c2e6;
   background-image: url("/images/icon-play.svg");
   background-repeat: no-repeat;
   background-position-y: 5px;
@@ -152,7 +154,7 @@ main {
 }
 
 .card-bg.study-bg {
-  background-color: #ff8c66;
+  background-color: #ff5c7c;
   background-image: url("/images/icon-study.svg");
   background-repeat: no-repeat;
   background-position-y: 5px;
@@ -161,7 +163,7 @@ main {
 }
 
 .card-bg.self-bg {
-  background-color: #ff8c66;
+  background-color: #f1c65b;
   background-image: url("/images/icon-self-care.svg");
   background-repeat: no-repeat;
   background-position-y: 5px;
@@ -170,7 +172,7 @@ main {
 }
 
 .card-bg.ex-bg {
-  background-color: #ff8c66;
+  background-color: #4acf81;
   background-image: url("/images/icon-exercise.svg");
   background-repeat: no-repeat;
   background-position-y: 5px;
@@ -179,7 +181,7 @@ main {
 }
 
 .card-bg.social-bg {
-  background-color: #ff8c66;
+  background-color: #7536d3;
   background-image: url("/images/icon-social.svg");
   background-repeat: no-repeat;
   background-position-y: 5px;
@@ -227,10 +229,15 @@ main {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
-  padding: 0 5px;
 }
 
 .card-bg .card-content .card-header p {
   color: white;
+  margin-right: 5px;
+}
+
+.card-bg .card-content .card-header img {
+  margin-right: 15px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

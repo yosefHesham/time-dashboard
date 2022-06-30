@@ -38,17 +38,20 @@ main {
     border: 2px solid white;
     border-radius: 50%;
     width: 40%;
-    margin-top: 10px;
+    margin-top: 25px;
   }
   span {
     color: white;
     font-size: 12px;
+    margin-top: 25px;
     font-weight: 300;
   }
   p {
     color: white;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+  
   }
   ul {
     height: 30%;
@@ -76,19 +79,19 @@ main {
     @include background($work, url("/images/icon-work.svg"));
   }
   &.play-bg {
-    @include background($work, url("/images/icon-play.svg"));
+    @include background($play, url("/images/icon-play.svg"));
   }
   &.study-bg {
-    @include background($work, url("/images/icon-study.svg"));
+    @include background($study, url("/images/icon-study.svg"));
   }
   &.self-bg {
-    @include background($work, url("/images/icon-self-care.svg"));
+    @include background($selfCare, url("/images/icon-self-care.svg"));
   }
   &.ex-bg {
-    @include background($work, url("/images/icon-exercise.svg"));
+    @include background($excercise, url("/images/icon-exercise.svg"));
   }
   &.social-bg {
-    @include background($work, url("/images/icon-social.svg"));
+    @include background($social, url("/images/icon-social.svg"));
   }
 
   .card-content {
@@ -109,9 +112,13 @@ main {
       @include display_flex(row,space-between);
       align-items: center;
       margin-top: 10px;
-      padding: 0 5px;
       p {
-        color:white
+        color:white;
+        margin-right:5px;
+      }
+      img {
+        margin-right: 15px;
+        cursor: pointer;
       }
     }
   }
