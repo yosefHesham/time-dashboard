@@ -1,0 +1,63 @@
+@import 'variables';
+@import 'config';
+@import 'mixins';
+
+main {
+  @include size(100vw,100vh);
+}
+
+%radius {
+  border-radius: 8px;
+}
+
+.dashboard {
+  @include size(70%,80%);
+  margin: 20% auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  gap: 15px;
+
+
+}
+
+.report {
+  @include background($report,"");
+  @extend %radius;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $primary;
+
+
+  .info {
+    height: 70%;
+    background-color:$report ;
+    @extend %radius
+  }
+  img{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 20%;
+  }
+  
+  ul{
+    list-style:none;
+  }
+}
+
+.work-bg {
+  @include background($work,url("/images/icon-work.svg"));
+  display: flex;
+  flex-direction: column-reverse;
+  @extend %radius;
+
+  .work {
+    background-color: $primary;
+    height: 80%;
+    @extend %radius;
+
+  }
+}
+
