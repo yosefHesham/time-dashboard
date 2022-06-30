@@ -190,9 +190,29 @@ main {
 .card-bg .card-content {
   background-color: #1c1f4a;
   height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.card-bg .card-header {
+.card-bg .card-content h2 {
+  color: white;
+  margin-left: 15px;
+}
+
+.card-bg .card-content p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 15px;
+}
+
+.card-bg .card-content .card-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,7 +226,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
   padding: 0 5px;
+}
+
+.card-bg .card-content .card-header p {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
