@@ -4,9 +4,9 @@
   background-color: $color;
   background-image: $image;
   background-repeat: no-repeat;
-  background-position-y: 1px ;
+  background-position-y: 5px ;
   background-position-x: 90%;
-  background-size: 20%;
+  background-size: 25%;
 }
 
 @mixin size($width,$height) {
@@ -16,7 +16,6 @@
 
 
 @mixin display_flex($direction,$justifyContent:start) {
-  
   display: flex;
   flex-direction: $direction;
   justify-content: get_justify($direction,$justifyContent )

@@ -16,14 +16,14 @@ main {
   height: 100vh;
 }
 
-.report, .report .info, .work-bg, .work-bg .work {
+.report, .report .info, .card-bg, .card-bg .card-content {
   border-radius: 8px;
 }
 
 .dashboard {
   width: 70%;
   height: 80%;
-  margin: 20% auto;
+  margin: 5% auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
@@ -35,9 +35,9 @@ main {
   background-color: #5847eb;
   background-image: "";
   background-repeat: no-repeat;
-  background-position-y: 1px;
+  background-position-y: 5px;
   background-position-x: 90%;
-  background-size: 20%;
+  background-size: 25%;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
@@ -110,8 +110,8 @@ main {
 .report ul li {
   color: rgba(255, 255, 255, 0.5);
   font-size: 15px;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .report ul li:hover {
@@ -119,13 +119,7 @@ main {
   font-size: 20px;
 }
 
-.work-bg {
-  background-color: #ff8c66;
-  background-image: url("/images/icon-work.svg");
-  background-repeat: no-repeat;
-  background-position-y: 1px;
-  background-position-x: 90%;
-  background-size: 20%;
+.card-bg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +133,61 @@ main {
   flex-direction: column-reverse;
 }
 
-.work-bg .work {
+.card-bg.work-bg {
+  background-color: #ff8c66;
+  background-image: url("/images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  background-position-x: 90%;
+  background-size: 25%;
+}
+
+.card-bg.play-bg {
+  background-color: #ff8c66;
+  background-image: url("/images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  background-position-x: 90%;
+  background-size: 25%;
+}
+
+.card-bg.study-bg {
+  background-color: #ff8c66;
+  background-image: url("/images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  background-position-x: 90%;
+  background-size: 25%;
+}
+
+.card-bg.self-bg {
+  background-color: #ff8c66;
+  background-image: url("/images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  background-position-x: 90%;
+  background-size: 25%;
+}
+
+.card-bg.ex-bg {
+  background-color: #ff8c66;
+  background-image: url("/images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  background-position-x: 90%;
+  background-size: 25%;
+}
+
+.card-bg.social-bg {
+  background-color: #ff8c66;
+  background-image: url("/images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  background-position-x: 90%;
+  background-size: 25%;
+}
+
+.card-bg .card-content {
   background-color: #1c1f4a;
   height: 80%;
 }
