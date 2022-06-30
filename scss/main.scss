@@ -96,4 +96,10 @@ main {
     height: 80%;
     @extend %radius;
   }
+  .card-header {
+    @include display_flex(row,space-between);
+    align-items: center;
+    margin-top: 5px;
+    padding: 0 5px;
+  }
 }
