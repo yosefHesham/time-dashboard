@@ -8,7 +8,7 @@
 
 body {
   background-color: #0f1424;
-  font-family: 'Rubik','Montserrat' sans-serif;
+  font-family: 'Rubik',sans-serif;
 }
 
 main {
@@ -92,6 +92,7 @@ main {
   font-size: 25px;
   font-weight: 400;
   margin-bottom: 5px;
+  line-height: 1.5;
 }
 
 .report ul {
@@ -241,5 +242,48 @@ main {
 .card-bg .card-content .card-header img {
   margin-right: 15px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  .report .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    row-gap: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 25px 0;
+  }
+  .report .info img {
+    width: 20%;
+    margin: 0;
+  }
+  .report .info br {
+    display: none;
+  }
+  .report ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

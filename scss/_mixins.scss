@@ -20,3 +20,10 @@
   flex-direction: $direction;
   justify-content: get_justify($direction,$justifyContent )
 }
+
+@mixin media-mobile {
+  @media only screen and (max-width: 450px) {
+    @content;
+  }
+  
+}
