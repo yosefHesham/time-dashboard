@@ -1,6 +1,9 @@
 @import "mixins";
 
 @include media-mobile {
+  .dashboard {
+    width: 80%;
+  }
   .report {
   .info {
     @include display_flex(row,space-evenly);
@@ -19,6 +22,23 @@
     @include display_flex(row,space-evenly);
     align-items: center;
     padding: 10px 0;
+  }
+}
+
+.card-bg {
+  padding-top: 20px;
+  background-size: 20%;
+  background-position-y: -2px;
+}
+.card-content {
+  padding: 10% 0;
+
+  .hours {
+    margin-top: 10px;
+    @include display_flex(row, space-between);
+    p{
+      margin-right: 10px;
+    }
   }
 }
 }

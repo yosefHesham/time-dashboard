@@ -35,9 +35,6 @@ main {
   background-color: #5847eb;
   background-image: "";
   background-repeat: no-repeat;
-  background-position-y: 5px;
-  background-position-x: 90%;
-  background-size: 25%;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
@@ -136,60 +133,45 @@ main {
       -ms-flex-pack: "end";
           justify-content: "end";
   flex-direction: column-reverse;
+  background-position-y: 5px;
+  background-position-x: 90%;
+  background-size: 25%;
 }
 
 .card-bg.work-bg {
   background-color: #ff8c66;
   background-image: url("/images/icon-work.svg");
   background-repeat: no-repeat;
-  background-position-y: 5px;
-  background-position-x: 90%;
-  background-size: 25%;
 }
 
 .card-bg.play-bg {
   background-color: #56c2e6;
   background-image: url("/images/icon-play.svg");
   background-repeat: no-repeat;
-  background-position-y: 5px;
-  background-position-x: 90%;
-  background-size: 25%;
 }
 
 .card-bg.study-bg {
   background-color: #ff5c7c;
   background-image: url("/images/icon-study.svg");
   background-repeat: no-repeat;
-  background-position-y: 5px;
-  background-position-x: 90%;
-  background-size: 25%;
 }
 
 .card-bg.self-bg {
   background-color: #f1c65b;
   background-image: url("/images/icon-self-care.svg");
   background-repeat: no-repeat;
-  background-position-y: 5px;
-  background-position-x: 90%;
-  background-size: 25%;
 }
 
 .card-bg.ex-bg {
   background-color: #4acf81;
   background-image: url("/images/icon-exercise.svg");
   background-repeat: no-repeat;
-  background-position-y: 5px;
-  background-position-x: 90%;
-  background-size: 25%;
 }
 
 .card-bg.social-bg {
   background-color: #7536d3;
   background-image: url("/images/icon-social.svg");
   background-repeat: no-repeat;
-  background-position-y: 5px;
-  background-position-x: 90%;
-  background-size: 25%;
 }
 
 .card-bg .card-content {
@@ -210,6 +192,7 @@ main {
 .card-bg .card-content h2 {
   color: white;
   margin-left: 15px;
+  font-weight: 400;
 }
 
 .card-bg .card-content p {
@@ -245,6 +228,9 @@ main {
 }
 
 @media only screen and (max-width: 450px) {
+  .dashboard {
+    width: 80%;
+  }
   .report .info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -284,6 +270,30 @@ main {
         -ms-flex-align: center;
             align-items: center;
     padding: 10px 0;
+  }
+  .card-bg {
+    padding-top: 20px;
+    background-size: 20%;
+    background-position-y: -2px;
+  }
+  .card-content {
+    padding: 10% 0;
+  }
+  .card-content .hours {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card-content .hours p {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

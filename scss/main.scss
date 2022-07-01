@@ -77,6 +77,9 @@ main {
 .card-bg {
   @include display_flex(column-reverse);
   flex-direction: column-reverse;
+  background-position-y: 5px ;
+  background-position-x: 90%;
+  background-size: 25%;
   @extend %radius;
   &.work-bg {
     @include background($work, url("/images/icon-work.svg"));
@@ -105,6 +108,7 @@ main {
     h2{
       color: white;
       margin-left: 15px;
+      font-weight: 400;
     }
     p{
       color: rgba(255, 255, 255, 0.5);

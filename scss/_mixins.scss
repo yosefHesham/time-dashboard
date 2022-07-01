@@ -4,9 +4,7 @@
   background-color: $color;
   background-image: $image;
   background-repeat: no-repeat;
-  background-position-y: 5px ;
-  background-position-x: 90%;
-  background-size: 25%;
+
 }
 
 @mixin size($width,$height) {
