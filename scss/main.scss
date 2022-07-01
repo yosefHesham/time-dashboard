@@ -3,7 +3,7 @@
 @import "mixins";
 
 main {
-  @include size(100vw, 100vh);
+  @include size(100vw, 100%);
 }
 
 %radius {
@@ -11,8 +11,8 @@ main {
 }
 
 .dashboard {
-  @include size(70%, 80%);
-  margin: 5% auto;
+  @include size(70%, 70%);
+  margin: 10% auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
@@ -25,13 +25,15 @@ main {
   grid-row-end: 3;
   @include display_flex(column, space-between);
   background-color: $primary;
+  padding-bottom: 5px;
 
   .info {
-    height: 70%;
+    height: 80%;
     background-color: $report;
     @include display_flex(column);
-    row-gap: 20px;
+    row-gap: 15px;
     padding-left: 10px;
+    padding-bottom: 20px;
     @extend %radius;
   }
   img {
@@ -43,14 +45,14 @@ main {
   span {
     color: white;
     font-size: 12px;
-    margin-top: 25px;
     font-weight: 300;
+     margin: 0;
   }
   p {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
-    line-height: 1.5;
+    margin-bottom: 5px;
   
   }
   ul {

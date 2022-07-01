@@ -13,7 +13,7 @@ body {
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .report, .report .info, .card-bg, .card-bg .card-content {
@@ -22,8 +22,8 @@ main {
 
 .dashboard {
   width: 70%;
-  height: 80%;
-  margin: 5% auto;
+  height: 70%;
+  margin: 10% auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
@@ -52,10 +52,11 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #1c1f4a;
+  padding-bottom: 5px;
 }
 
 .report .info {
-  height: 70%;
+  height: 80%;
   background-color: #5847eb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,8 +68,9 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  row-gap: 20px;
+  row-gap: 15px;
   padding-left: 10px;
+  padding-bottom: 20px;
 }
 
 .report img {
@@ -81,15 +83,15 @@ main {
 .report span {
   color: white;
   font-size: 12px;
-  margin-top: 25px;
   font-weight: 300;
+  margin: 0;
 }
 
 .report p {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
-  line-height: 1.5;
+  margin-bottom: 5px;
 }
 
 .report ul {
