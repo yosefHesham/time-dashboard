@@ -25,7 +25,6 @@ main {
   grid-row-end: 3;
   @include display_flex(column, space-between);
   background-color: $primary;
-  padding-bottom: 5px;
 
   .info {
     height: 80%;
@@ -33,7 +32,6 @@ main {
     @include display_flex(column);
     row-gap: 15px;
     padding-left: 10px;
-    padding-bottom: 20px;
     @extend %radius;
   }
   img {
@@ -61,7 +59,12 @@ main {
     list-style: none;
     margin-left: 10px;
     margin-top: 0;
-    @include display_flex(column, space-evenly);
+    padding-bottom: 20%;
+    row-gap: 10px;
+    @include display_flex(column, space-between);
+    & > li {
+      margin-top: 10px;
+    }
     li {
       color: rgba(255, 255, 255, 0.5);
       font-size: 15px;

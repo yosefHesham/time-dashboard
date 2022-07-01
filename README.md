@@ -17,8 +17,8 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Links
 
-- Solution URL: [](https://github.com/yosefHesham/time-dashboard)
-- Live Site URL: [](https://yosefhesham.github.io/time-dashboard/dist/)
+- Solution URL: [solution](https://github.com/yosefHesham/time-dashboard)
+- Live Site URL: [demo](https://yosefhesham.github.io/time-dashboard/dist/)
 
 
 ### Built with
