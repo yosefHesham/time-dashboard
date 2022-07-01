@@ -133,44 +133,44 @@ main {
       -ms-flex-pack: "end";
           justify-content: "end";
   flex-direction: column-reverse;
-  background-position-y: 5px;
+  background-position-y: 2px;
   background-position-x: 90%;
-  background-size: 25%;
+  background-size: 22%;
 }
 
 .card-bg.work-bg {
   background-color: #ff8c66;
-  background-image: url("/images/icon-work.svg");
+  background-image: url("../../images/icon-work.svg");
   background-repeat: no-repeat;
 }
 
 .card-bg.play-bg {
   background-color: #56c2e6;
-  background-image: url("/images/icon-play.svg");
+  background-image: url("../../images/icon-play.svg");
   background-repeat: no-repeat;
 }
 
 .card-bg.study-bg {
   background-color: #ff5c7c;
-  background-image: url("/images/icon-study.svg");
+  background-image: url("../../images/icon-study.svg");
   background-repeat: no-repeat;
 }
 
 .card-bg.self-bg {
   background-color: #f1c65b;
-  background-image: url("/images/icon-self-care.svg");
+  background-image: url("../../images/icon-self-care.svg");
   background-repeat: no-repeat;
 }
 
 .card-bg.ex-bg {
   background-color: #4acf81;
-  background-image: url("/images/icon-exercise.svg");
+  background-image: url("../../images/icon-exercise.svg");
   background-repeat: no-repeat;
 }
 
 .card-bg.social-bg {
   background-color: #7536d3;
-  background-image: url("/images/icon-social.svg");
+  background-image: url("../../images/icon-social.svg");
   background-repeat: no-repeat;
 }
 

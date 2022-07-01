@@ -77,27 +77,27 @@ main {
 .card-bg {
   @include display_flex(column-reverse);
   flex-direction: column-reverse;
-  background-position-y: 5px ;
+  background-position-y: 2px ;
   background-position-x: 90%;
-  background-size: 25%;
+  background-size: 22%;
   @extend %radius;
   &.work-bg {
-    @include background($work, url("/images/icon-work.svg"));
+    @include background($work, url("../../images/icon-work.svg"));
   }
   &.play-bg {
-    @include background($play, url("/images/icon-play.svg"));
+    @include background($play, url("../../images/icon-play.svg"));
   }
   &.study-bg {
-    @include background($study, url("/images/icon-study.svg"));
+    @include background($study, url("../../images/icon-study.svg"));
   }
   &.self-bg {
-    @include background($selfCare, url("/images/icon-self-care.svg"));
+    @include background($selfCare, url("../../images/icon-self-care.svg"));
   }
   &.ex-bg {
-    @include background($excercise, url("/images/icon-exercise.svg"));
+    @include background($excercise, url("../../images/icon-exercise.svg"));
   }
   &.social-bg {
-    @include background($social, url("/images/icon-social.svg"));
+    @include background($social, url("../../images/icon-social.svg"));
   }
 
   .card-content {
